@@ -1,0 +1,115 @@
+/* ==== Tổng thể ==== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f9fafa;
+    color: #333;
+    margin: 2em auto;
+    padding: 2em;
+    max-width: 850px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+/* ==== Tiêu đề ==== */
+h1, h2 {
+    color: #007b7f;
+    border-bottom: 2px solid #00b3b3;
+    padding-bottom: 5px;
+    margin-bottom: 1em;
+}
+
+/* ==== Bảng ==== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background-color: #009999;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+td {
+    border-top: 1px solid #e8e8e8;
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: #f1fdfd;
+    transition: background-color 0.2s ease;
+}
+
+/* ==== Liên kết ==== */
+a {
+    color: #007b7f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #00cccc;
+    text-decoration: underline;
+}
+
+/* ==== Form ==== */
+label {
+    display: inline-block;
+    width: 140px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.4em;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 0.8em;
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #00b3b3;
+    box-shadow: 0 0 5px rgba(0, 179, 179, 0.3);
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #009999;
+    color: #fff;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #00b3b3;
+}
+
+/* ==== Khoảng cách ==== */
+.pad_top {
+    padding-top: 0.25em;
+}
+
+.margin_left {
+    margin-left: 0.5em;
+}
+
+/* ==== Ghi chú ==== */
+p {
+    margin-top: 1em;
+}
