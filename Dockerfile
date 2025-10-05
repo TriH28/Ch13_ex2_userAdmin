@@ -3,17 +3,22 @@
 # ===============================
 FROM tomcat:9.0-jdk17
 
-# Xóa webapp mặc định của Tomcat
-RUN rm -rf /usr/local/tomcat/webapps/ROOT
+# ===============================
+# ⚙️ Thiết lập thư mục làm việc
+# ===============================
+WORKDIR /usr/local/tomcat
+
+# Xóa ứng dụng ROOT mặc định (Tomcat index)
+RUN rm -rf webapps/ROOT
 
 # ===============================
-# 📦 Copy WAR file (đã build sẵn)
+# 📦 Copy WAR file đã build sẵn
 # ===============================
-# Đổi tên file .war của bạn thành ROOT.war để ứng dụng chạy ở /
-COPY ch13_ex2_userAdmin_war.war /usr/local/tomcat/webapps/ROOT.war
+# Đổi tên file WAR của bạn thành ROOT.war để ứng dụng chạy ở domain gốc (/)
+COPY ch13_ex2_userAdmin_war.war webapps/ROOT.war
 
 # ===============================
-# 🌐 Cấu hình cổng (Render yêu cầu 8080)
+# 🌐 Render yêu cầu port 8080
 # ===============================
 EXPOSE 8080
 
